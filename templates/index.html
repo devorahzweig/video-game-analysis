@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Game Analysis</title>
+    <!-- Include Plotly library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Video Game Analysis</h1>
+    <select id="yearSelect"></select>
+    <div id="chart"></div>
+
+    <script src="{{ url_for('static', filename='chart.js') }}"></script>
+</body>
+</html>

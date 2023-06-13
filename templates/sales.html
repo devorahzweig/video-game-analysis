@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Chart</title>
+    <!-- Include Plotly library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            background-color: #FFEECC;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .chart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sales Chart</h1>
+        <p>Brief description of the data being shown in the line chart.</p>
+        <div id="chart" class="chart"></div>
+
+        <script src="{{ url_for('static', filename='chart.js') }}"></script>
+    </div>
+</body>
+</html>
